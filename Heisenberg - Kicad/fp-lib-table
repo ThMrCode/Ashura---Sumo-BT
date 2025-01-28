@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Mini-Sumo")(type "KiCad")(uri "${KIPRJMOD}/Mini-Sumo - Kicad Lib/Mini-Sumo.pretty")(options "")(descr ""))
+)

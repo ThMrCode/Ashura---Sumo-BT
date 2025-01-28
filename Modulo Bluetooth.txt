@@ -1,0 +1,18 @@
+Comando	Descripción	Ejemplo de uso	Respuesta esperada
+AT	Verifica si el módulo está en modo AT y operativo.	AT	OK
+AT+VERSION?	Obtiene la versión del firmware del módulo.	AT+VERSION?	+VERSION:3.0-20170601
+AT+NAME=<nombre>	Cambia el nombre del módulo Bluetooth.	AT+NAME=MiModuloBT	OK
+AT+ROLE=<n>	Cambia el rol del módulo: 0 para esclavo, 1 para maestro.	AT+ROLE=0	OK
+AT+PSWD=<clave>	Cambia la contraseña (PIN) de emparejamiento (por defecto: 1234).	AT+PSWD=5678	OK
+AT+UART=<baud>,0,0	Cambia la velocidad de comunicación UART (baud rate).	AT+UART=9600,0,0	OK
+AT+ADDR?	Consulta la dirección MAC del módulo.	AT+ADDR?	+ADDR:0017:03:2D:0A:5C
+AT+STATE?	Verifica el estado de la conexión Bluetooth.	AT+STATE?	+STATE:INITIALIZED o CONNECTED
+AT+RESET	Reinicia el módulo.	AT+RESET	OK
+AT+ORGL	Restaura la configuración de fábrica.	AT+ORGL	OK
+AT+CMODE=<n>	Cambia el modo de conexión: 0 para dirección fija, 1 para cualquier dispositivo.	AT+CMODE=1	OK
+
+pio device monitor --eol=CRLF --echo --filter send_on_enter
+
+7.5mm de alto las ruedas del suelo
+16.79
+10mm de alto extra estaría bien
