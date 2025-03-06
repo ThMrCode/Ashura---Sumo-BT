@@ -21,8 +21,8 @@ namespace DriverMotor {
         LEFT_PWM =                  12,
         LEFT_FORWARD =              33,
         LEFT_BACKWARD =             32,
-        RIGHT_FORWARD =             25,
-        RIGHT_BACKWARD =            26,
+        RIGHT_FORWARD =             26,
+        RIGHT_BACKWARD =            25,
         RIGHT_PWM =                 27,
     };
 
