@@ -9,16 +9,18 @@ namespace DriverMotor {
         STATE_BACKWARD_BACKWARD,
         STATE_FORWARD_BACKWARD,
         STATE_BACKWARD_FORWARD,
+        STATE_FREE,
+        STATE_STOP,
     };
 
-    // PIN OUT CONFIG
+    // PIN OUT CONFIG 27 26 25 33 32 12
     enum PIN {
-        LEFT_PWM =                  12,
+        LEFT_PWM =                  27,
         LEFT_FORWARD =              26,
         LEFT_BACKWARD =             25,
         RIGHT_FORWARD =             33,
         RIGHT_BACKWARD =            32,
-        RIGHT_PWM =                 27,
+        RIGHT_PWM =                 12,
     };
 
     // GLOBAL VARIABLES

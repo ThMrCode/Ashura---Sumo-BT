@@ -1,7 +1,7 @@
 #include <DriverMotor.h>
 
 namespace DriverMotor {
-    STATE state = STATE_FORWARD_FORWARD;
+    STATE state = STATE_STOP;
     
     STATE mapState(float valueLeft, float valueRight)
     {
@@ -63,6 +63,7 @@ namespace DriverMotor {
         digitalWrite(PIN::RIGHT_BACKWARD, LOW);
         analogWrite(PIN::LEFT_PWM, 0);
         analogWrite(PIN::RIGHT_PWM, 0);
+        state = STATE_FREE;
     }
     
     void stopMotor()   {
@@ -72,6 +73,7 @@ namespace DriverMotor {
         digitalWrite(PIN::RIGHT_BACKWARD, HIGH);
         analogWrite(PIN::LEFT_PWM, 0);
         analogWrite(PIN::RIGHT_PWM, 0);
+        state = STATE_STOP;
     }
 
     void writeMotor(float valueLeft, float valueRight)
